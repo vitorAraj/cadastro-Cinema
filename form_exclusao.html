@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulário contacto site EPV</title>
+    </head>
+
+<style>
+body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0efef;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px 0;
+        }
+
+        .container {
+            width: 250px;
+            max-width: 600px;
+            margin: 45px auto;
+            background: rgba(255, 255, 255, 0.459);
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+            border-radius: 10px;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form label {
+            font-weight: bold;
+            margin: 10px 0 5px;
+            text-align: left;
+        }
+
+        .form input, select {
+            padding: 10px;
+            font-size: 16px;
+            margin: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .button {
+            background-color: #cc5500;
+            color: white;
+            border: none;
+            width: 90%;
+            padding: 12px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            background-color: #a34502;
+        }
+
+</style>
+<body>
+
+ <?php include 'menu.html'; ?>
+
+  <form class="form" action="excluir.php" method="post">
+
+    <div class="header">
+        <h1>Excluindo dados</h1>
+      </div>
+      
+      <div class="container">
+        <label for="fname">Qual ID vc deseja excluir? </label><br>
+        <input type="text" id="fname" name="Id_user" placeholder="id" ><br>
+        <input class="button" type="submit" value="Excluir">
+        
+      </div>
+   
+  </form>
+</div>
+
+</body>
+</html>
+
+
